@@ -6,7 +6,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     private var list: UICollectionView!
     private var activity: UIActivityIndicatorView!
     
-    private let repository = BetRepository(service: RemoteBetService.instance)
+    private let repository = BetRepositoryImpl(service: RemoteBetService.instance,betUpdaterRegistry: BetUpdatersRegistryImpl())
     private var items: [Bet] = []
 
     override func viewDidLoad() {
