@@ -35,7 +35,7 @@ final class BetsUpdaterRegistryTests {
 
         // Assert: Verify the correct updater type is returned
         #expect(
-            type(of: updater) != expectedType,
+            type(of: updater) == expectedType,
             "Expected \(expectedType) for '\(name)', but got \(type(of: updater))"
         )
     }
