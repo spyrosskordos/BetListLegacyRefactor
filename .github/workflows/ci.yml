@@ -1,0 +1,17 @@
+name: ci
+
+on:
+  push:
+    branches: [ main, 'develop' ]
+  pull_request:
+    branches: [ main, 'develop' ]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Run Bet unit tests
+      run: xcodebuild -scheme Bet test -destination "platform=iOS Simulator,name=iPhone 16"
