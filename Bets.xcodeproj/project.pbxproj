@@ -14,6 +14,8 @@
 		235012B82CECEC980057E6EA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235012B72CECEC930057E6EA /* Coordinator.swift */; };
 		236904DD2CEB3D940060D1D6 /* BetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236904DC2CEB3D8D0060D1D6 /* BetListView.swift */; };
 		236905552CEB86C20060D1D6 /* BetRepository+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236905542CEB86B90060D1D6 /* BetRepository+Protocol.swift */; };
+		3D1D77B92CEE85110002C56A /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D77B82CEE850B0002C56A /* AppCoordinatorTests.swift */; };
+		3D1D77C02CEE85610002C56A /* MockAppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1D77BF2CEE85610002C56A /* MockAppFactory.swift */; };
 		3DA4EE9B2CEBD0A100A70066 /* BetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4EE9A2CEBD09600A70066 /* BetListViewModel.swift */; };
 		3DA4EE9D2CEBD1A200A70066 /* ViewDidLoad+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4EE9C2CEBD19100A70066 /* ViewDidLoad+ViewModifier.swift */; };
 		3DA4EE9F2CEBD20B00A70066 /* BetListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4EE9E2CEBD1FE00A70066 /* BetListViewItem.swift */; };
@@ -107,6 +109,8 @@
 		236904DC2CEB3D8D0060D1D6 /* BetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListView.swift; sourceTree = "<group>"; };
 		236905542CEB86B90060D1D6 /* BetRepository+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetRepository+Protocol.swift"; sourceTree = "<group>"; };
 		3D1D77B62CEE74C40002C56A /* BetTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BetTests.xctestplan; sourceTree = "<group>"; };
+		3D1D77B82CEE850B0002C56A /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
+		3D1D77BF2CEE85610002C56A /* MockAppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAppFactory.swift; sourceTree = "<group>"; };
 		3DA4EE9A2CEBD09600A70066 /* BetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewModel.swift; sourceTree = "<group>"; };
 		3DA4EE9C2CEBD19100A70066 /* ViewDidLoad+ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewDidLoad+ViewModifier.swift"; sourceTree = "<group>"; };
 		3DA4EE9E2CEBD1FE00A70066 /* BetListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewItem.swift; sourceTree = "<group>"; };
@@ -216,6 +220,23 @@
 			path = BetUpdatersRegisty;
 			sourceTree = "<group>";
 		};
+		3D1D77B72CEE84F80002C56A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3D1D77BC2CEE85430002C56A /* Mocks */,
+				3D1D77B82CEE850B0002C56A /* AppCoordinatorTests.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3D1D77BC2CEE85430002C56A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3D1D77BF2CEE85610002C56A /* MockAppFactory.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		3D50B5D52CEA92F200BAD2DF /* BetUpdater */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +269,7 @@
 		3DA4EF2D2CEBD86A00A70066 /* BetTests */ = {
 			isa = PBXGroup;
 			children = (
+				3D1D77B72CEE84F80002C56A /* Coordinator */,
 				3DA4EF302CEBDD0600A70066 /* BetListViewModel */,
 			);
 			path = BetTests;
@@ -628,7 +650,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1D77B92CEE85110002C56A /* AppCoordinatorTests.swift in Sources */,
 				3DA4EF2F2CEBDCA700A70066 /* BetListViewModelTests.swift in Sources */,
+				3D1D77C02CEE85610002C56A /* MockAppFactory.swift in Sources */,
 				3DDD79882CEE13FC00C28FB3 /* BetListActionsSpy.swift in Sources */,
 				235012B02CEC9D3A0057E6EA /* MockBetRepository.swift in Sources */,
 			);

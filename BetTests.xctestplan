@@ -15,6 +15,13 @@
     {
       "target" : {
         "containerPath" : "container:Bets.xcodeproj",
+        "identifier" : "3DA4EF232CEBD6A600A70066",
+        "name" : "BetsTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:Bets.xcodeproj",
         "identifier" : "B5C0FD7A29E694E1009AD7E4",
         "name" : "BetsCoreTests"
       }
