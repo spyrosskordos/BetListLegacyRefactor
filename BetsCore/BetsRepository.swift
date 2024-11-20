@@ -12,58 +12,71 @@ public class BetRepository {
 
     public func updateOdds() async throws -> [Bet] {
         var bets = try await service.loadBets()
-        
+
         for i in 0 ..< bets.count {
-            if bets[i].name != "Player performance", bets[i].name != "Total score" {
-                if bets[i].quality > 0 {
-                    if bets[i].name != "Winning team" {
-                        bets[i].quality = bets[i].quality - 1
-                    }
-                }
+            if bets[i].name == "Winning team" {
+                continue
+            } else if bets[i].name == "Player performance" {
+                handlePlayerPerformance(bet: &bets[i])
+            } else if bets[i].name == "Total score" {
+                handleTotalScorePerformance(bet: &bets[i])
             } else {
-                if bets[i].quality < 50 {
-                    bets[i].quality = bets[i].quality + 1
-
-                    if bets[i].name == "Total score" {
-                        if bets[i].sellIn < 11 {
-                            if bets[i].quality < 50 {
-                                bets[i].quality = bets[i].quality + 1
-                            }
-                        }
-
-                        if bets[i].sellIn < 6 {
-                            if bets[i].quality < 50 {
-                                bets[i].quality = bets[i].quality + 1
-                            }
-                        }
-                    }
-                }
-            }
-
-            if bets[i].name != "Winning team" {
-                bets[i].sellIn = bets[i].sellIn - 1
-            }
-
-            if bets[i].sellIn < 0 {
-                if bets[i].name != "Player performance" {
-                    if bets[i].name != "Total score" {
-                        if bets[i].quality > 0 {
-                            if bets[i].name != "Winning team" {
-                                bets[i].quality = bets[i].quality - 1
-                            }
-                        }
-                    } else {
-                        bets[i].quality = bets[i].quality - bets[i].quality
-                    }
-                } else {
-                    if bets[i].quality < 50 {
-                        bets[i].quality = bets[i].quality + 1
-                    }
-                }
+                handleDefaultBet(bet: &bets[i])
             }
         }
-
+        print(bets)
         try await service.saveBets(bets)
         return bets
+    }
+
+    private func handleDefaultBet(bet: inout Bet) {
+        if bet.quality > 0 {
+            bet.quality -= 1
+        }
+
+        bet.sellIn -= 1
+
+        if bet.sellIn < 0,
+           bet.quality > 0
+        {
+            bet.quality -= 1
+        }
+    }
+
+    private func handlePlayerPerformance(bet: inout Bet) {
+        if bet.quality < 50 {
+            bet.quality += 1
+        }
+
+        bet.sellIn -= 1
+
+        if bet.sellIn < 0,
+           bet.quality < 50
+        {
+            bet.quality += 1
+        }
+    }
+
+    private func handleTotalScorePerformance(bet: inout Bet) {
+        if bet.quality < 50 {
+            bet.quality += 1
+        }
+        if bet.sellIn < 11,
+           bet.quality < 50
+        {
+            bet.quality += 1
+        }
+
+        if bet.sellIn < 6,
+           bet.quality < 50
+        {
+            bet.quality += 1
+        }
+
+        bet.sellIn -= 1
+
+        if bet.sellIn < 0 {
+            bet.quality = 0
+        }
     }
 }
