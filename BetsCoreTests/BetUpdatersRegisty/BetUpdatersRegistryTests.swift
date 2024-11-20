@@ -11,7 +11,8 @@ import XCTest
 @testable import BetsCore
 
 @Suite("BetUpdateStrategyFactory related tests")
-final class BetsUpdaterRegistryTests {
+final class BetUpdateStrategyFactoryTests {
+
     private var sut: BetUpdatersRegistryImpl
 
     init() {
@@ -19,11 +20,12 @@ final class BetsUpdaterRegistryTests {
     }
 
     @Test("Test all updater types",
-          arguments: zip(["Total score", "Player performance", "Winning team", "Uknown bet"],
-                         [
-                             TotalScoreBetUpdater.self, PlayerPerformanceBetUpdater.self, WinningTeamBetUpdater.self,
-                             DefaultBetUpdater.self,
-                         ]))
+        arguments: zip(["Total score", "Player performance", "Winning team", "Uknown bet"],
+        [
+            TotalScoreBetUpdater.self, PlayerPerformanceBetUpdater.self, WinningTeamBetUpdater.self,
+            DefaultBetUpdater.self,
+        ])
+    )
     func testGetUpdaterForBet(name: String, expectedType: BetUpdater.Type) {
         // Call the reusable assertion logic for each test case
         assertOutputType(name: name, expectedType: expectedType)
@@ -39,4 +41,5 @@ final class BetsUpdaterRegistryTests {
             "Expected \(expectedType) for '\(name)', but got \(type(of: updater))"
         )
     }
+
 }
