@@ -5,6 +5,7 @@
 //  Created by Spyros Skordos on 20/11/24.
 //
 import SwiftUI
+
 struct SeparatorModifier: ViewModifier {
     var color: Color
     var edges: VerticalEdge.Set = .all

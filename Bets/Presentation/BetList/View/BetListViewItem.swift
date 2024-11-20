@@ -21,11 +21,12 @@ struct BetListViewItem: View {
                     .font(.subheadline)
                     .foregroundStyle(Color(.bettsonLightBlue))
             }
-
             Spacer()
             Text("\(bet.quality)")
                 .font(.subheadline)
                 .foregroundStyle(Color(.betssonOrange))
+                .frame(width: 40)
+            
         }
         .padding()
         .frame(height: 60)
