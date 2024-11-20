@@ -10,6 +10,13 @@
 		3D56231F2CEE2E31000E2FE0 /* BetRepository+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56231D2CEE2E31000E2FE0 /* BetRepository+Protocol.swift */; };
 		3D5623202CEE2E31000E2FE0 /* BetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56231E2CEE2E31000E2FE0 /* BetsRepository.swift */; };
 		3D5623262CEE2EED000E2FE0 /* BetService+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623242CEE2EED000E2FE0 /* BetService+Protocol.swift */; };
+		3D56232B2CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623292CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift */; };
+		3D56232C2CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623282CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift */; };
+		3D5623332CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623302CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift */; };
+		3D5623342CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56232D2CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift */; };
+		3D5623352CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56232F2CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift */; };
+		3D5623362CEE2F5F000E2FE0 /* DefaultBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56232E2CEE2F5F000E2FE0 /* DefaultBetUpdater.swift */; };
+		3D5623372CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623312CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift */; };
 		B5C0FD5C29E69206009AD7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */; };
 		B5C0FD5E29E69206009AD7E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */; };
 		B5C0FD6029E69206009AD7E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5F29E69206009AD7E4 /* ViewController.swift */; };
@@ -67,6 +74,13 @@
 		3D56231D2CEE2E31000E2FE0 /* BetRepository+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetRepository+Protocol.swift"; sourceTree = "<group>"; };
 		3D56231E2CEE2E31000E2FE0 /* BetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsRepository.swift; sourceTree = "<group>"; };
 		3D5623242CEE2EED000E2FE0 /* BetService+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetService+Protocol.swift"; sourceTree = "<group>"; };
+		3D5623282CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdateRegistryImpl.swift; sourceTree = "<group>"; };
+		3D5623292CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetUpdaterRegistry+Protocol.swift"; sourceTree = "<group>"; };
+		3D56232D2CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningTeamBetUpdater.swift; sourceTree = "<group>"; };
+		3D56232E2CEE2F5F000E2FE0 /* DefaultBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBetUpdater.swift; sourceTree = "<group>"; };
+		3D56232F2CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPerformanceBetUpdater.swift; sourceTree = "<group>"; };
+		3D5623302CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalScoreBetUpdater.swift; sourceTree = "<group>"; };
+		3D5623312CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetUpdater+Protocol.swift"; sourceTree = "<group>"; };
 		B5C0FD5829E69206009AD7E4 /* Bets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +141,27 @@
 			path = BetService;
 			sourceTree = "<group>";
 		};
+		3D56232A2CEE2F26000E2FE0 /* BetUpdaterRegistry */ = {
+			isa = PBXGroup;
+			children = (
+				3D5623282CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift */,
+				3D5623292CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift */,
+			);
+			path = BetUpdaterRegistry;
+			sourceTree = "<group>";
+		};
+		3D5623322CEE2F5F000E2FE0 /* BetUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				3D56232D2CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift */,
+				3D56232E2CEE2F5F000E2FE0 /* DefaultBetUpdater.swift */,
+				3D56232F2CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift */,
+				3D5623302CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift */,
+				3D5623312CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift */,
+			);
+			path = BetUpdater;
+			sourceTree = "<group>";
+		};
 		B5C0FD4F29E69206009AD7E4 = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +200,8 @@
 		B5C0FD7529E694E0009AD7E4 /* BetsCore */ = {
 			isa = PBXGroup;
 			children = (
+				3D5623322CEE2F5F000E2FE0 /* BetUpdater */,
+				3D56232A2CEE2F26000E2FE0 /* BetUpdaterRegistry */,
 				3D5623252CEE2EED000E2FE0 /* BetService */,
 				3D56231C2CEE2E1F000E2FE0 /* BetRepository */,
 				B5C0FD7629E694E0009AD7E4 /* BetsCore.h */,
@@ -338,6 +375,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D56231F2CEE2E31000E2FE0 /* BetRepository+Protocol.swift in Sources */,
+				3D56232B2CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift in Sources */,
+				3D5623332CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift in Sources */,
+				3D5623342CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift in Sources */,
+				3D5623352CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift in Sources */,
+				3D5623362CEE2F5F000E2FE0 /* DefaultBetUpdater.swift in Sources */,
+				3D5623372CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift in Sources */,
+				3D56232C2CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift in Sources */,
 				3D5623262CEE2EED000E2FE0 /* BetService+Protocol.swift in Sources */,
 				3D5623202CEE2E31000E2FE0 /* BetsRepository.swift in Sources */,
 				B5C0FD9329E69531009AD7E4 /* Bet.swift in Sources */,
