@@ -20,6 +20,11 @@
 		3D56233A2CEE4210000E2FE0 /* BetUpdatersRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623382CEE4210000E2FE0 /* BetUpdatersRegistryTests.swift */; };
 		3D56233F2CEE4E5A000E2FE0 /* BetUpdaterTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56233C2CEE4E5A000E2FE0 /* BetUpdaterTestCases.swift */; };
 		3D5623402CEE4E5A000E2FE0 /* BetUpdatersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56233D2CEE4E5A000E2FE0 /* BetUpdatersTests.swift */; };
+		3D5623482CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623422CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift */; };
+		3D5623492CEE6127000E2FE0 /* BetsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623462CEE6127000E2FE0 /* BetsRepositoryTests.swift */; };
+		3D56234A2CEE6127000E2FE0 /* MockBetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623442CEE6127000E2FE0 /* MockBetService.swift */; };
+		3D56234B2CEE6127000E2FE0 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623412CEE6127000E2FE0 /* MockError.swift */; };
+		3D56234C2CEE6127000E2FE0 /* MockBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623432CEE6127000E2FE0 /* MockBetUpdater.swift */; };
 		B5C0FD5C29E69206009AD7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */; };
 		B5C0FD5E29E69206009AD7E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */; };
 		B5C0FD6029E69206009AD7E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5F29E69206009AD7E4 /* ViewController.swift */; };
@@ -27,7 +32,6 @@
 		B5C0FD6529E69208009AD7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C0FD6429E69208009AD7E4 /* Assets.xcassets */; };
 		B5C0FD6829E69208009AD7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C0FD6629E69208009AD7E4 /* LaunchScreen.storyboard */; };
 		B5C0FD7C29E694E1009AD7E4 /* BetsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */; };
-		B5C0FD8329E694E1009AD7E4 /* BetsCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD8229E694E1009AD7E4 /* BetsCoreTests.swift */; };
 		B5C0FD8429E694E1009AD7E4 /* BetsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C0FD7629E694E0009AD7E4 /* BetsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5C0FD8729E694E1009AD7E4 /* BetsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */; };
 		B5C0FD8829E694E1009AD7E4 /* BetsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -88,6 +92,11 @@
 		3D56233B2CEE424B000E2FE0 /* BetTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BetTests.xctestplan; sourceTree = "<group>"; };
 		3D56233C2CEE4E5A000E2FE0 /* BetUpdaterTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdaterTestCases.swift; sourceTree = "<group>"; };
 		3D56233D2CEE4E5A000E2FE0 /* BetUpdatersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdatersTests.swift; sourceTree = "<group>"; };
+		3D5623412CEE6127000E2FE0 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		3D5623422CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetUpdatersRegistry.swift; sourceTree = "<group>"; };
+		3D5623432CEE6127000E2FE0 /* MockBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetUpdater.swift; sourceTree = "<group>"; };
+		3D5623442CEE6127000E2FE0 /* MockBetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetService.swift; sourceTree = "<group>"; };
+		3D5623462CEE6127000E2FE0 /* BetsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsRepositoryTests.swift; sourceTree = "<group>"; };
 		B5C0FD5829E69206009AD7E4 /* Bets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +108,6 @@
 		B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BetsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C0FD7629E694E0009AD7E4 /* BetsCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetsCore.h; sourceTree = "<group>"; };
 		B5C0FD7B29E694E1009AD7E4 /* BetsCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetsCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5C0FD8229E694E1009AD7E4 /* BetsCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsCoreTests.swift; sourceTree = "<group>"; };
 		B5C0FD9229E69531009AD7E4 /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
 		B5C0FD9429E69625009AD7E4 /* RemoteBetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteBetService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -186,6 +194,26 @@
 			path = BetUpdater;
 			sourceTree = "<group>";
 		};
+		3D5623452CEE6127000E2FE0 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3D5623412CEE6127000E2FE0 /* MockError.swift */,
+				3D5623422CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift */,
+				3D5623432CEE6127000E2FE0 /* MockBetUpdater.swift */,
+				3D5623442CEE6127000E2FE0 /* MockBetService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3D5623472CEE6127000E2FE0 /* BetRepository */ = {
+			isa = PBXGroup;
+			children = (
+				3D5623452CEE6127000E2FE0 /* Mocks */,
+				3D5623462CEE6127000E2FE0 /* BetsRepositoryTests.swift */,
+			);
+			path = BetRepository;
+			sourceTree = "<group>";
+		};
 		B5C0FD4F29E69206009AD7E4 = {
 			isa = PBXGroup;
 			children = (
@@ -238,9 +266,9 @@
 		B5C0FD8129E694E1009AD7E4 /* BetsCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				3D5623472CEE6127000E2FE0 /* BetRepository */,
 				3D56233E2CEE4E5A000E2FE0 /* BetUpdater */,
 				3D5623392CEE4210000E2FE0 /* BetUpdatersRegisty */,
-				B5C0FD8229E694E1009AD7E4 /* BetsCoreTests.swift */,
 			);
 			path = BetsCoreTests;
 			sourceTree = "<group>";
@@ -422,7 +450,11 @@
 				3D56233A2CEE4210000E2FE0 /* BetUpdatersRegistryTests.swift in Sources */,
 				3D56233F2CEE4E5A000E2FE0 /* BetUpdaterTestCases.swift in Sources */,
 				3D5623402CEE4E5A000E2FE0 /* BetUpdatersTests.swift in Sources */,
-				B5C0FD8329E694E1009AD7E4 /* BetsCoreTests.swift in Sources */,
+				3D5623482CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift in Sources */,
+				3D5623492CEE6127000E2FE0 /* BetsRepositoryTests.swift in Sources */,
+				3D56234A2CEE6127000E2FE0 /* MockBetService.swift in Sources */,
+				3D56234B2CEE6127000E2FE0 /* MockError.swift in Sources */,
+				3D56234C2CEE6127000E2FE0 /* MockBetUpdater.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
