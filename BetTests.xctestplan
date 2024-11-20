@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "CF531DD7-988E-431F-B4B5-0EF2C81E67E6",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Bets.xcodeproj",
+        "identifier" : "B5C0FD7A29E694E1009AD7E4",
+        "name" : "BetsCoreTests"
+      }
+    }
+  ],
+  "version" : 1
+}
