@@ -10,7 +10,6 @@ import Testing
 
 @Suite("BetUpdaterTests related tests")
 struct BetUpdaterTests {
-    
     @Test("Test DefaultBetUpdater behavior",
           arguments: defaultBetUpdaterTestCases)
     func testDefaultBetUpdaterBehavior(
