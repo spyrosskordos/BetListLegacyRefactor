@@ -7,39 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D56231F2CEE2E31000E2FE0 /* BetRepository+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56231D2CEE2E31000E2FE0 /* BetRepository+Protocol.swift */; };
-		3D5623202CEE2E31000E2FE0 /* BetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56231E2CEE2E31000E2FE0 /* BetsRepository.swift */; };
-		3D5623262CEE2EED000E2FE0 /* BetService+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623242CEE2EED000E2FE0 /* BetService+Protocol.swift */; };
-		3D56232B2CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623292CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift */; };
-		3D56232C2CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623282CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift */; };
-		3D5623332CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623302CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift */; };
-		3D5623342CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56232D2CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift */; };
-		3D5623352CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56232F2CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift */; };
-		3D5623362CEE2F5F000E2FE0 /* DefaultBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56232E2CEE2F5F000E2FE0 /* DefaultBetUpdater.swift */; };
-		3D5623372CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623312CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift */; };
-		3D56233A2CEE4210000E2FE0 /* BetUpdatersRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623382CEE4210000E2FE0 /* BetUpdatersRegistryTests.swift */; };
-		3D56233F2CEE4E5A000E2FE0 /* BetUpdaterTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56233C2CEE4E5A000E2FE0 /* BetUpdaterTestCases.swift */; };
-		3D5623402CEE4E5A000E2FE0 /* BetUpdatersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56233D2CEE4E5A000E2FE0 /* BetUpdatersTests.swift */; };
-		3D5623482CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623422CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift */; };
-		3D5623492CEE6127000E2FE0 /* BetsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623462CEE6127000E2FE0 /* BetsRepositoryTests.swift */; };
-		3D56234A2CEE6127000E2FE0 /* MockBetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623442CEE6127000E2FE0 /* MockBetService.swift */; };
-		3D56234B2CEE6127000E2FE0 /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623412CEE6127000E2FE0 /* MockError.swift */; };
-		3D56234C2CEE6127000E2FE0 /* MockBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5623432CEE6127000E2FE0 /* MockBetUpdater.swift */; };
+		235012B02CEC9D3A0057E6EA /* MockBetRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235012AF2CEC9D320057E6EA /* MockBetRepository.swift */; };
+		235012B22CECBF240057E6EA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 235012B12CECBF240057E6EA /* Colors.xcassets */; };
+		235012B42CECD4B40057E6EA /* ListSeparator+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235012B32CECD4AF0057E6EA /* ListSeparator+ViewModifier.swift */; };
+		235012B62CECEA4E0057E6EA /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235012B52CECEA470057E6EA /* AppFactory.swift */; };
+		235012B82CECEC980057E6EA /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235012B72CECEC930057E6EA /* Coordinator.swift */; };
+		236904DD2CEB3D940060D1D6 /* BetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236904DC2CEB3D8D0060D1D6 /* BetListView.swift */; };
+		236905552CEB86C20060D1D6 /* BetRepository+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236905542CEB86B90060D1D6 /* BetRepository+Protocol.swift */; };
+		3DA4EE9B2CEBD0A100A70066 /* BetListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4EE9A2CEBD09600A70066 /* BetListViewModel.swift */; };
+		3DA4EE9D2CEBD1A200A70066 /* ViewDidLoad+ViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4EE9C2CEBD19100A70066 /* ViewDidLoad+ViewModifier.swift */; };
+		3DA4EE9F2CEBD20B00A70066 /* BetListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4EE9E2CEBD1FE00A70066 /* BetListViewItem.swift */; };
+		3DA4EF2F2CEBDCA700A70066 /* BetListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA4EF2E2CEBD87700A70066 /* BetListViewModelTests.swift */; };
+		3DDD797A2CEDEFAA00C28FB3 /* BetDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD79792CEDEFA200C28FB3 /* BetDetailsView.swift */; };
+		3DDD797C2CEDEFD500C28FB3 /* BetDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD797B2CEDEFCE00C28FB3 /* BetDetailsViewModel.swift */; };
+		3DDD797E2CEDF1C100C28FB3 /* BetListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD797D2CEDF1C100C28FB3 /* BetListFactory.swift */; };
+		3DDD79802CEDF4D300C28FB3 /* BetListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD797F2CEDF4C200C28FB3 /* BetListCoordinator.swift */; };
+		3DDD79842CEDF7EF00C28FB3 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD79832CEDF7EF00C28FB3 /* AppCoordinator.swift */; };
+		3DDD79882CEE13FC00C28FB3 /* BetListActionsSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDD79872CEE13EC00C28FB3 /* BetListActionsSpy.swift */; };
+		3DDF56682CE9FF590014CD5B /* BetUpdater+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56672CE9FF410014CD5B /* BetUpdater+Protocol.swift */; };
+		3DDF566A2CE9FFEB0014CD5B /* TotalScoreBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56692CE9FFE90014CD5B /* TotalScoreBetUpdater.swift */; };
+		3DDF566C2CEA00210014CD5B /* PlayerPerformanceBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF566B2CEA00100014CD5B /* PlayerPerformanceBetUpdater.swift */; };
+		3DDF566E2CEA006A0014CD5B /* DefaultBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF566D2CEA00630014CD5B /* DefaultBetUpdater.swift */; };
+		3DDF56722CEA0A770014CD5B /* BetUpdaterRegistry+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56712CEA0A650014CD5B /* BetUpdaterRegistry+Protocol.swift */; };
+		3DDF56742CEA0ADD0014CD5B /* BetUpdateRegistryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56732CEA0AC90014CD5B /* BetUpdateRegistryImpl.swift */; };
+		3DDF56762CEA29370014CD5B /* WinningTeamBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56752CEA29320014CD5B /* WinningTeamBetUpdater.swift */; };
+		3DDF56782CEA2AEA0014CD5B /* BetsRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56772CEA2ADC0014CD5B /* BetsRepositoryTests.swift */; };
+		3DDF567B2CEA2B4B0014CD5B /* MockBetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF567A2CEA2B410014CD5B /* MockBetService.swift */; };
+		3DDF567D2CEA2B730014CD5B /* MockBetUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF567C2CEA2B6C0014CD5B /* MockBetUpdater.swift */; };
+		3DDF56832CEA41F40014CD5B /* MockBetUpdatersRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56822CEA41E60014CD5B /* MockBetUpdatersRegistry.swift */; };
+		3DDF56872CEA45B70014CD5B /* BetService+Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56862CEA45AF0014CD5B /* BetService+Protocol.swift */; };
+		3DDF568A2CEA4ACA0014CD5B /* MockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56892CEA4AC30014CD5B /* MockError.swift */; };
+		3DDF568C2CEA5C560014CD5B /* BetUpdatersRegistryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF568B2CEA5C3F0014CD5B /* BetUpdatersRegistryTests.swift */; };
+		3DDF568F2CEA6E220014CD5B /* BetUpdatersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF568E2CEA6E190014CD5B /* BetUpdatersTests.swift */; };
+		3DDF56912CEA7C590014CD5B /* BetUpdaterTestCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDF56902CEA7C400014CD5B /* BetUpdaterTestCases.swift */; };
 		B5C0FD5C29E69206009AD7E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */; };
 		B5C0FD5E29E69206009AD7E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */; };
-		B5C0FD6029E69206009AD7E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD5F29E69206009AD7E4 /* ViewController.swift */; };
-		B5C0FD6329E69206009AD7E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C0FD6129E69206009AD7E4 /* Main.storyboard */; };
 		B5C0FD6529E69208009AD7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5C0FD6429E69208009AD7E4 /* Assets.xcassets */; };
 		B5C0FD6829E69208009AD7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5C0FD6629E69208009AD7E4 /* LaunchScreen.storyboard */; };
 		B5C0FD7C29E694E1009AD7E4 /* BetsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */; };
 		B5C0FD8429E694E1009AD7E4 /* BetsCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B5C0FD7629E694E0009AD7E4 /* BetsCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5C0FD8729E694E1009AD7E4 /* BetsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */; };
 		B5C0FD8829E694E1009AD7E4 /* BetsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B5C0FD9129E6950A009AD7E4 /* BetsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD9029E6950A009AD7E4 /* BetsRepository.swift */; };
 		B5C0FD9329E69531009AD7E4 /* Bet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD9229E69531009AD7E4 /* Bet.swift */; };
 		B5C0FD9529E69625009AD7E4 /* RemoteBetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C0FD9429E69625009AD7E4 /* RemoteBetService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		3DA4EF282CEBD6A600A70066 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B5C0FD5029E69206009AD7E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B5C0FD5729E69206009AD7E4;
+			remoteInfo = Bets;
+		};
 		B5C0FD7D29E694E1009AD7E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B5C0FD5029E69206009AD7E4 /* Project object */;
@@ -78,41 +99,63 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		3D56231D2CEE2E31000E2FE0 /* BetRepository+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetRepository+Protocol.swift"; sourceTree = "<group>"; };
-		3D56231E2CEE2E31000E2FE0 /* BetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsRepository.swift; sourceTree = "<group>"; };
-		3D5623242CEE2EED000E2FE0 /* BetService+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetService+Protocol.swift"; sourceTree = "<group>"; };
-		3D5623282CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdateRegistryImpl.swift; sourceTree = "<group>"; };
-		3D5623292CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetUpdaterRegistry+Protocol.swift"; sourceTree = "<group>"; };
-		3D56232D2CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningTeamBetUpdater.swift; sourceTree = "<group>"; };
-		3D56232E2CEE2F5F000E2FE0 /* DefaultBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBetUpdater.swift; sourceTree = "<group>"; };
-		3D56232F2CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPerformanceBetUpdater.swift; sourceTree = "<group>"; };
-		3D5623302CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalScoreBetUpdater.swift; sourceTree = "<group>"; };
-		3D5623312CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetUpdater+Protocol.swift"; sourceTree = "<group>"; };
-		3D5623382CEE4210000E2FE0 /* BetUpdatersRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdatersRegistryTests.swift; sourceTree = "<group>"; };
-		3D56233B2CEE424B000E2FE0 /* BetTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BetTests.xctestplan; sourceTree = "<group>"; };
-		3D56233C2CEE4E5A000E2FE0 /* BetUpdaterTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdaterTestCases.swift; sourceTree = "<group>"; };
-		3D56233D2CEE4E5A000E2FE0 /* BetUpdatersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdatersTests.swift; sourceTree = "<group>"; };
-		3D5623412CEE6127000E2FE0 /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
-		3D5623422CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetUpdatersRegistry.swift; sourceTree = "<group>"; };
-		3D5623432CEE6127000E2FE0 /* MockBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetUpdater.swift; sourceTree = "<group>"; };
-		3D5623442CEE6127000E2FE0 /* MockBetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetService.swift; sourceTree = "<group>"; };
-		3D5623462CEE6127000E2FE0 /* BetsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsRepositoryTests.swift; sourceTree = "<group>"; };
+		235012AF2CEC9D320057E6EA /* MockBetRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetRepository.swift; sourceTree = "<group>"; };
+		235012B12CECBF240057E6EA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		235012B32CECD4AF0057E6EA /* ListSeparator+ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ListSeparator+ViewModifier.swift"; sourceTree = "<group>"; };
+		235012B52CECEA470057E6EA /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		235012B72CECEC930057E6EA /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		236904DC2CEB3D8D0060D1D6 /* BetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListView.swift; sourceTree = "<group>"; };
+		236905542CEB86B90060D1D6 /* BetRepository+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetRepository+Protocol.swift"; sourceTree = "<group>"; };
+		3D1D77B62CEE74C40002C56A /* BetTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = BetTests.xctestplan; sourceTree = "<group>"; };
+		3DA4EE9A2CEBD09600A70066 /* BetListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewModel.swift; sourceTree = "<group>"; };
+		3DA4EE9C2CEBD19100A70066 /* ViewDidLoad+ViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewDidLoad+ViewModifier.swift"; sourceTree = "<group>"; };
+		3DA4EE9E2CEBD1FE00A70066 /* BetListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewItem.swift; sourceTree = "<group>"; };
+		3DA4EF242CEBD6A600A70066 /* BetsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA4EF2E2CEBD87700A70066 /* BetListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListViewModelTests.swift; sourceTree = "<group>"; };
+		3DDD79792CEDEFA200C28FB3 /* BetDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetDetailsView.swift; sourceTree = "<group>"; };
+		3DDD797B2CEDEFCE00C28FB3 /* BetDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetDetailsViewModel.swift; sourceTree = "<group>"; };
+		3DDD797D2CEDF1C100C28FB3 /* BetListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListFactory.swift; sourceTree = "<group>"; };
+		3DDD797F2CEDF4C200C28FB3 /* BetListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListCoordinator.swift; sourceTree = "<group>"; };
+		3DDD79832CEDF7EF00C28FB3 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3DDD79872CEE13EC00C28FB3 /* BetListActionsSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetListActionsSpy.swift; sourceTree = "<group>"; };
+		3DDF56672CE9FF410014CD5B /* BetUpdater+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetUpdater+Protocol.swift"; sourceTree = "<group>"; };
+		3DDF56692CE9FFE90014CD5B /* TotalScoreBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalScoreBetUpdater.swift; sourceTree = "<group>"; };
+		3DDF566B2CEA00100014CD5B /* PlayerPerformanceBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerPerformanceBetUpdater.swift; sourceTree = "<group>"; };
+		3DDF566D2CEA00630014CD5B /* DefaultBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultBetUpdater.swift; sourceTree = "<group>"; };
+		3DDF56712CEA0A650014CD5B /* BetUpdaterRegistry+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetUpdaterRegistry+Protocol.swift"; sourceTree = "<group>"; };
+		3DDF56732CEA0AC90014CD5B /* BetUpdateRegistryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdateRegistryImpl.swift; sourceTree = "<group>"; };
+		3DDF56752CEA29320014CD5B /* WinningTeamBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinningTeamBetUpdater.swift; sourceTree = "<group>"; };
+		3DDF56772CEA2ADC0014CD5B /* BetsRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsRepositoryTests.swift; sourceTree = "<group>"; };
+		3DDF567A2CEA2B410014CD5B /* MockBetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetService.swift; sourceTree = "<group>"; };
+		3DDF567C2CEA2B6C0014CD5B /* MockBetUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetUpdater.swift; sourceTree = "<group>"; };
+		3DDF56822CEA41E60014CD5B /* MockBetUpdatersRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBetUpdatersRegistry.swift; sourceTree = "<group>"; };
+		3DDF56862CEA45AF0014CD5B /* BetService+Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BetService+Protocol.swift"; sourceTree = "<group>"; };
+		3DDF56892CEA4AC30014CD5B /* MockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockError.swift; sourceTree = "<group>"; };
+		3DDF568B2CEA5C3F0014CD5B /* BetUpdatersRegistryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdatersRegistryTests.swift; sourceTree = "<group>"; };
+		3DDF568E2CEA6E190014CD5B /* BetUpdatersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdatersTests.swift; sourceTree = "<group>"; };
+		3DDF56902CEA7C400014CD5B /* BetUpdaterTestCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetUpdaterTestCases.swift; sourceTree = "<group>"; };
 		B5C0FD5829E69206009AD7E4 /* Bets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B5C0FD5F29E69206009AD7E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B5C0FD6229E69206009AD7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B5C0FD6429E69208009AD7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5C0FD6729E69208009AD7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B5C0FD6929E69208009AD7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BetsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5C0FD7629E694E0009AD7E4 /* BetsCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BetsCore.h; sourceTree = "<group>"; };
 		B5C0FD7B29E694E1009AD7E4 /* BetsCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BetsCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C0FD9029E6950A009AD7E4 /* BetsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BetsRepository.swift; sourceTree = "<group>"; };
 		B5C0FD9229E69531009AD7E4 /* Bet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bet.swift; sourceTree = "<group>"; };
 		B5C0FD9429E69625009AD7E4 /* RemoteBetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteBetService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3DA4EF212CEBD6A600A70066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5C0FD5529E69206009AD7E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,86 +182,217 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3D56231C2CEE2E1F000E2FE0 /* BetRepository */ = {
+		235012AE2CEC9D280057E6EA /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
-				3D56231D2CEE2E31000E2FE0 /* BetRepository+Protocol.swift */,
-				3D56231E2CEE2E31000E2FE0 /* BetsRepository.swift */,
-			);
-			path = BetRepository;
-			sourceTree = "<group>";
-		};
-		3D5623252CEE2EED000E2FE0 /* BetService */ = {
-			isa = PBXGroup;
-			children = (
-				3D5623242CEE2EED000E2FE0 /* BetService+Protocol.swift */,
-			);
-			path = BetService;
-			sourceTree = "<group>";
-		};
-		3D56232A2CEE2F26000E2FE0 /* BetUpdaterRegistry */ = {
-			isa = PBXGroup;
-			children = (
-				3D5623282CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift */,
-				3D5623292CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift */,
-			);
-			path = BetUpdaterRegistry;
-			sourceTree = "<group>";
-		};
-		3D5623322CEE2F5F000E2FE0 /* BetUpdater */ = {
-			isa = PBXGroup;
-			children = (
-				3D56232D2CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift */,
-				3D56232E2CEE2F5F000E2FE0 /* DefaultBetUpdater.swift */,
-				3D56232F2CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift */,
-				3D5623302CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift */,
-				3D5623312CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift */,
-			);
-			path = BetUpdater;
-			sourceTree = "<group>";
-		};
-		3D5623392CEE4210000E2FE0 /* BetUpdatersRegisty */ = {
-			isa = PBXGroup;
-			children = (
-				3D5623382CEE4210000E2FE0 /* BetUpdatersRegistryTests.swift */,
-			);
-			path = BetUpdatersRegisty;
-			sourceTree = "<group>";
-		};
-		3D56233E2CEE4E5A000E2FE0 /* BetUpdater */ = {
-			isa = PBXGroup;
-			children = (
-				3D56233C2CEE4E5A000E2FE0 /* BetUpdaterTestCases.swift */,
-				3D56233D2CEE4E5A000E2FE0 /* BetUpdatersTests.swift */,
-			);
-			path = BetUpdater;
-			sourceTree = "<group>";
-		};
-		3D5623452CEE6127000E2FE0 /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				3D5623412CEE6127000E2FE0 /* MockError.swift */,
-				3D5623422CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift */,
-				3D5623432CEE6127000E2FE0 /* MockBetUpdater.swift */,
-				3D5623442CEE6127000E2FE0 /* MockBetService.swift */,
+				3DDD79872CEE13EC00C28FB3 /* BetListActionsSpy.swift */,
+				235012AF2CEC9D320057E6EA /* MockBetRepository.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
 		};
-		3D5623472CEE6127000E2FE0 /* BetRepository */ = {
+		236905512CEB70A00060D1D6 /* BetService */ = {
 			isa = PBXGroup;
 			children = (
-				3D5623452CEE6127000E2FE0 /* Mocks */,
-				3D5623462CEE6127000E2FE0 /* BetsRepositoryTests.swift */,
+				3DDF56862CEA45AF0014CD5B /* BetService+Protocol.swift */,
+			);
+			path = BetService;
+			sourceTree = "<group>";
+		};
+		236905522CEB70AC0060D1D6 /* BetRepository */ = {
+			isa = PBXGroup;
+			children = (
+				236905542CEB86B90060D1D6 /* BetRepository+Protocol.swift */,
+				B5C0FD9029E6950A009AD7E4 /* BetsRepository.swift */,
 			);
 			path = BetRepository;
+			sourceTree = "<group>";
+		};
+		236905532CEB70BF0060D1D6 /* BetUpdatersRegisty */ = {
+			isa = PBXGroup;
+			children = (
+				3DDF568B2CEA5C3F0014CD5B /* BetUpdatersRegistryTests.swift */,
+			);
+			path = BetUpdatersRegisty;
+			sourceTree = "<group>";
+		};
+		3D50B5D52CEA92F200BAD2DF /* BetUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				3DDF56902CEA7C400014CD5B /* BetUpdaterTestCases.swift */,
+				3DDF568E2CEA6E190014CD5B /* BetUpdatersTests.swift */,
+			);
+			path = BetUpdater;
+			sourceTree = "<group>";
+		};
+		3D50B5D62CEA953200BAD2DF /* BetRepository */ = {
+			isa = PBXGroup;
+			children = (
+				3D50B5D72CEA954B00BAD2DF /* Mocks */,
+				3DDF56772CEA2ADC0014CD5B /* BetsRepositoryTests.swift */,
+			);
+			path = BetRepository;
+			sourceTree = "<group>";
+		};
+		3D50B5D72CEA954B00BAD2DF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3DDF56892CEA4AC30014CD5B /* MockError.swift */,
+				3DDF56822CEA41E60014CD5B /* MockBetUpdatersRegistry.swift */,
+				3DDF567C2CEA2B6C0014CD5B /* MockBetUpdater.swift */,
+				3DDF567A2CEA2B410014CD5B /* MockBetService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		3DA4EF2D2CEBD86A00A70066 /* BetTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4EF302CEBDD0600A70066 /* BetListViewModel */,
+			);
+			path = BetTests;
+			sourceTree = "<group>";
+		};
+		3DA4EF302CEBDD0600A70066 /* BetListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				235012AE2CEC9D280057E6EA /* Mocks */,
+				3DA4EF2E2CEBD87700A70066 /* BetListViewModelTests.swift */,
+			);
+			path = BetListViewModel;
+			sourceTree = "<group>";
+		};
+		3DDD79892CEE178900C28FB3 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				235012B72CECEC930057E6EA /* Coordinator.swift */,
+				3DDD79832CEDF7EF00C28FB3 /* AppCoordinator.swift */,
+				3DDD797F2CEDF4C200C28FB3 /* BetListCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		3DDD798A2CEE185D00C28FB3 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD797D2CEDF1C100C28FB3 /* BetListFactory.swift */,
+				235012B52CECEA470057E6EA /* AppFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		3DDD798B2CEE190100C28FB3 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD798F2CEE193B00C28FB3 /* BetDetails */,
+				3DDD798C2CEE190A00C28FB3 /* BetList */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		3DDD798C2CEE190A00C28FB3 /* BetList */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD798E2CEE191600C28FB3 /* ViewModel */,
+				3DDD798D2CEE191100C28FB3 /* View */,
+			);
+			path = BetList;
+			sourceTree = "<group>";
+		};
+		3DDD798D2CEE191100C28FB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				236904DC2CEB3D8D0060D1D6 /* BetListView.swift */,
+				3DA4EE9E2CEBD1FE00A70066 /* BetListViewItem.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DDD798E2CEE191600C28FB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3DA4EE9A2CEBD09600A70066 /* BetListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3DDD798F2CEE193B00C28FB3 /* BetDetails */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD79912CEE197700C28FB3 /* ViewModel */,
+				3DDD79902CEE196700C28FB3 /* View */,
+			);
+			path = BetDetails;
+			sourceTree = "<group>";
+		};
+		3DDD79902CEE196700C28FB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD79792CEDEFA200C28FB3 /* BetDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DDD79912CEE197700C28FB3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD797B2CEDEFCE00C28FB3 /* BetDetailsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3DDD79922CEE1A1B00C28FB3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD79932CEE1A2200C28FB3 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		3DDD79932CEE1A2200C28FB3 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B5C0FD9429E69625009AD7E4 /* RemoteBetService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		3DDD79942CEE1A7F00C28FB3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				235012B32CECD4AF0057E6EA /* ListSeparator+ViewModifier.swift */,
+				3DA4EE9C2CEBD19100A70066 /* ViewDidLoad+ViewModifier.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		3DDF566F2CEA02370014CD5B /* BetUpdater */ = {
+			isa = PBXGroup;
+			children = (
+				3DDF56752CEA29320014CD5B /* WinningTeamBetUpdater.swift */,
+				3DDF566D2CEA00630014CD5B /* DefaultBetUpdater.swift */,
+				3DDF566B2CEA00100014CD5B /* PlayerPerformanceBetUpdater.swift */,
+				3DDF56692CE9FFE90014CD5B /* TotalScoreBetUpdater.swift */,
+				3DDF56672CE9FF410014CD5B /* BetUpdater+Protocol.swift */,
+			);
+			path = BetUpdater;
+			sourceTree = "<group>";
+		};
+		3DDF56702CEA09EE0014CD5B /* BetUpdaterRegistry */ = {
+			isa = PBXGroup;
+			children = (
+				3DDF56732CEA0AC90014CD5B /* BetUpdateRegistryImpl.swift */,
+				3DDF56712CEA0A650014CD5B /* BetUpdaterRegistry+Protocol.swift */,
+			);
+			path = BetUpdaterRegistry;
 			sourceTree = "<group>";
 		};
 		B5C0FD4F29E69206009AD7E4 = {
 			isa = PBXGroup;
 			children = (
-				3D56233B2CEE424B000E2FE0 /* BetTests.xctestplan */,
+				3D1D77B62CEE74C40002C56A /* BetTests.xctestplan */,
 				B5C0FD5A29E69206009AD7E4 /* Bets */,
+				3DA4EF2D2CEBD86A00A70066 /* BetTests */,
 				B5C0FD7529E694E0009AD7E4 /* BetsCore */,
 				B5C0FD8129E694E1009AD7E4 /* BetsCoreTests */,
 				B5C0FD5929E69206009AD7E4 /* Products */,
@@ -231,6 +405,7 @@
 				B5C0FD5829E69206009AD7E4 /* Bets.app */,
 				B5C0FD7429E694E0009AD7E4 /* BetsCore.framework */,
 				B5C0FD7B29E694E1009AD7E4 /* BetsCoreTests.xctest */,
+				3DA4EF242CEBD6A600A70066 /* BetsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,13 +414,16 @@
 			isa = PBXGroup;
 			children = (
 				B5C0FD5B29E69206009AD7E4 /* AppDelegate.swift */,
-				B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */,
-				B5C0FD5F29E69206009AD7E4 /* ViewController.swift */,
-				B5C0FD9429E69625009AD7E4 /* RemoteBetService.swift */,
-				B5C0FD6129E69206009AD7E4 /* Main.storyboard */,
 				B5C0FD6429E69208009AD7E4 /* Assets.xcassets */,
-				B5C0FD6629E69208009AD7E4 /* LaunchScreen.storyboard */,
+				235012B12CECBF240057E6EA /* Colors.xcassets */,
+				3DDD79942CEE1A7F00C28FB3 /* Common */,
+				3DDD79922CEE1A1B00C28FB3 /* Data */,
+				3DDD798A2CEE185D00C28FB3 /* Factories */,
 				B5C0FD6929E69208009AD7E4 /* Info.plist */,
+				B5C0FD6629E69208009AD7E4 /* LaunchScreen.storyboard */,
+				3DDD79892CEE178900C28FB3 /* Navigation */,
+				3DDD798B2CEE190100C28FB3 /* Presentation */,
+				B5C0FD5D29E69206009AD7E4 /* SceneDelegate.swift */,
 			);
 			path = Bets;
 			sourceTree = "<group>";
@@ -253,10 +431,10 @@
 		B5C0FD7529E694E0009AD7E4 /* BetsCore */ = {
 			isa = PBXGroup;
 			children = (
-				3D5623322CEE2F5F000E2FE0 /* BetUpdater */,
-				3D56232A2CEE2F26000E2FE0 /* BetUpdaterRegistry */,
-				3D5623252CEE2EED000E2FE0 /* BetService */,
-				3D56231C2CEE2E1F000E2FE0 /* BetRepository */,
+				236905522CEB70AC0060D1D6 /* BetRepository */,
+				236905512CEB70A00060D1D6 /* BetService */,
+				3DDF56702CEA09EE0014CD5B /* BetUpdaterRegistry */,
+				3DDF566F2CEA02370014CD5B /* BetUpdater */,
 				B5C0FD7629E694E0009AD7E4 /* BetsCore.h */,
 				B5C0FD9229E69531009AD7E4 /* Bet.swift */,
 			);
@@ -266,9 +444,9 @@
 		B5C0FD8129E694E1009AD7E4 /* BetsCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				3D5623472CEE6127000E2FE0 /* BetRepository */,
-				3D56233E2CEE4E5A000E2FE0 /* BetUpdater */,
-				3D5623392CEE4210000E2FE0 /* BetUpdatersRegisty */,
+				236905532CEB70BF0060D1D6 /* BetUpdatersRegisty */,
+				3D50B5D62CEA953200BAD2DF /* BetRepository */,
+				3D50B5D52CEA92F200BAD2DF /* BetUpdater */,
 			);
 			path = BetsCoreTests;
 			sourceTree = "<group>";
@@ -287,6 +465,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3DA4EF232CEBD6A600A70066 /* BetsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DA4EF2A2CEBD6A600A70066 /* Build configuration list for PBXNativeTarget "BetsTests" */;
+			buildPhases = (
+				3DA4EF202CEBD6A600A70066 /* Sources */,
+				3DA4EF212CEBD6A600A70066 /* Frameworks */,
+				3DA4EF222CEBD6A600A70066 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DA4EF292CEBD6A600A70066 /* PBXTargetDependency */,
+			);
+			name = BetsTests;
+			packageProductDependencies = (
+			);
+			productName = BetsTests;
+			productReference = 3DA4EF242CEBD6A600A70066 /* BetsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		B5C0FD5729E69206009AD7E4 /* Bets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5C0FD6C29E69208009AD7E4 /* Build configuration list for PBXNativeTarget "Bets" */;
@@ -350,9 +548,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
+					3DA4EF232CEBD6A600A70066 = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = B5C0FD5729E69206009AD7E4;
+					};
 					B5C0FD5729E69206009AD7E4 = {
 						CreatedOnToolsVersion = 14.0.1;
 					};
@@ -382,18 +584,26 @@
 				B5C0FD5729E69206009AD7E4 /* Bets */,
 				B5C0FD7329E694E0009AD7E4 /* BetsCore */,
 				B5C0FD7A29E694E1009AD7E4 /* BetsCoreTests */,
+				3DA4EF232CEBD6A600A70066 /* BetsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3DA4EF222CEBD6A600A70066 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5C0FD5629E69206009AD7E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B5C0FD6829E69208009AD7E4 /* LaunchScreen.storyboard in Resources */,
+				235012B22CECBF240057E6EA /* Colors.xcassets in Resources */,
 				B5C0FD6529E69208009AD7E4 /* Assets.xcassets in Resources */,
-				B5C0FD6329E69206009AD7E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,14 +624,35 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3DA4EF202CEBD6A600A70066 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA4EF2F2CEBDCA700A70066 /* BetListViewModelTests.swift in Sources */,
+				3DDD79882CEE13FC00C28FB3 /* BetListActionsSpy.swift in Sources */,
+				235012B02CEC9D3A0057E6EA /* MockBetRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B5C0FD5429E69206009AD7E4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5C0FD6029E69206009AD7E4 /* ViewController.swift in Sources */,
+				3DA4EE9D2CEBD1A200A70066 /* ViewDidLoad+ViewModifier.swift in Sources */,
+				3DA4EE9F2CEBD20B00A70066 /* BetListViewItem.swift in Sources */,
+				235012B82CECEC980057E6EA /* Coordinator.swift in Sources */,
 				B5C0FD9529E69625009AD7E4 /* RemoteBetService.swift in Sources */,
+				235012B62CECEA4E0057E6EA /* AppFactory.swift in Sources */,
+				235012B42CECD4B40057E6EA /* ListSeparator+ViewModifier.swift in Sources */,
 				B5C0FD5C29E69206009AD7E4 /* AppDelegate.swift in Sources */,
+				236904DD2CEB3D940060D1D6 /* BetListView.swift in Sources */,
+				3DDD79842CEDF7EF00C28FB3 /* AppCoordinator.swift in Sources */,
+				3DDD797A2CEDEFAA00C28FB3 /* BetDetailsView.swift in Sources */,
+				3DDD797C2CEDEFD500C28FB3 /* BetDetailsViewModel.swift in Sources */,
+				3DDD797E2CEDF1C100C28FB3 /* BetListFactory.swift in Sources */,
 				B5C0FD5E29E69206009AD7E4 /* SceneDelegate.swift in Sources */,
+				3DDD79802CEDF4D300C28FB3 /* BetListCoordinator.swift in Sources */,
+				3DA4EE9B2CEBD0A100A70066 /* BetListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,16 +660,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D56231F2CEE2E31000E2FE0 /* BetRepository+Protocol.swift in Sources */,
-				3D56232B2CEE2F26000E2FE0 /* BetUpdaterRegistry+Protocol.swift in Sources */,
-				3D5623332CEE2F5F000E2FE0 /* TotalScoreBetUpdater.swift in Sources */,
-				3D5623342CEE2F5F000E2FE0 /* WinningTeamBetUpdater.swift in Sources */,
-				3D5623352CEE2F5F000E2FE0 /* PlayerPerformanceBetUpdater.swift in Sources */,
-				3D5623362CEE2F5F000E2FE0 /* DefaultBetUpdater.swift in Sources */,
-				3D5623372CEE2F5F000E2FE0 /* BetUpdater+Protocol.swift in Sources */,
-				3D56232C2CEE2F26000E2FE0 /* BetUpdateRegistryImpl.swift in Sources */,
-				3D5623262CEE2EED000E2FE0 /* BetService+Protocol.swift in Sources */,
-				3D5623202CEE2E31000E2FE0 /* BetsRepository.swift in Sources */,
+				3DDF56762CEA29370014CD5B /* WinningTeamBetUpdater.swift in Sources */,
+				236905552CEB86C20060D1D6 /* BetRepository+Protocol.swift in Sources */,
+				3DDF56722CEA0A770014CD5B /* BetUpdaterRegistry+Protocol.swift in Sources */,
+				B5C0FD9129E6950A009AD7E4 /* BetsRepository.swift in Sources */,
+				3DDF56742CEA0ADD0014CD5B /* BetUpdateRegistryImpl.swift in Sources */,
+				3DDF56682CE9FF590014CD5B /* BetUpdater+Protocol.swift in Sources */,
+				3DDF56872CEA45B70014CD5B /* BetService+Protocol.swift in Sources */,
+				3DDF566A2CE9FFEB0014CD5B /* TotalScoreBetUpdater.swift in Sources */,
+				3DDF566E2CEA006A0014CD5B /* DefaultBetUpdater.swift in Sources */,
+				3DDF566C2CEA00210014CD5B /* PlayerPerformanceBetUpdater.swift in Sources */,
 				B5C0FD9329E69531009AD7E4 /* Bet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -447,20 +678,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D56233A2CEE4210000E2FE0 /* BetUpdatersRegistryTests.swift in Sources */,
-				3D56233F2CEE4E5A000E2FE0 /* BetUpdaterTestCases.swift in Sources */,
-				3D5623402CEE4E5A000E2FE0 /* BetUpdatersTests.swift in Sources */,
-				3D5623482CEE6127000E2FE0 /* MockBetUpdatersRegistry.swift in Sources */,
-				3D5623492CEE6127000E2FE0 /* BetsRepositoryTests.swift in Sources */,
-				3D56234A2CEE6127000E2FE0 /* MockBetService.swift in Sources */,
-				3D56234B2CEE6127000E2FE0 /* MockError.swift in Sources */,
-				3D56234C2CEE6127000E2FE0 /* MockBetUpdater.swift in Sources */,
+				3DDF56832CEA41F40014CD5B /* MockBetUpdatersRegistry.swift in Sources */,
+				3DDF567D2CEA2B730014CD5B /* MockBetUpdater.swift in Sources */,
+				3DDF56912CEA7C590014CD5B /* BetUpdaterTestCases.swift in Sources */,
+				3DDF568C2CEA5C560014CD5B /* BetUpdatersRegistryTests.swift in Sources */,
+				3DDF568F2CEA6E220014CD5B /* BetUpdatersTests.swift in Sources */,
+				3DDF56782CEA2AEA0014CD5B /* BetsRepositoryTests.swift in Sources */,
+				3DDF567B2CEA2B4B0014CD5B /* MockBetService.swift in Sources */,
+				3DDF568A2CEA4ACA0014CD5B /* MockError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3DA4EF292CEBD6A600A70066 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B5C0FD5729E69206009AD7E4 /* Bets */;
+			targetProxy = 3DA4EF282CEBD6A600A70066 /* PBXContainerItemProxy */;
+		};
 		B5C0FD7E29E694E1009AD7E4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B5C0FD7329E694E0009AD7E4 /* BetsCore */;
@@ -479,14 +715,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B5C0FD6129E69206009AD7E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B5C0FD6229E69206009AD7E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B5C0FD6629E69208009AD7E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -498,6 +726,51 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3DA4EF2B2CEBD6A600A70066 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SpyrosSkordos.BetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bets";
+			};
+			name = Debug;
+		};
+		3DA4EF2C2CEBD6A600A70066 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SpyrosSkordos.BetsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bets.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bets";
+			};
+			name = Release;
+		};
 		B5C0FD6A29E69208009AD7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -554,6 +827,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -607,6 +881,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -615,24 +890,24 @@
 		B5C0FD6D29E69208009AD7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8RWYXT6KP9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Bets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.assignmentskordos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -643,24 +918,24 @@
 		B5C0FD6E29E69208009AD7E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8RWYXT6KP9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Bets/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.Bets;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.assignmentskordos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -746,7 +1021,6 @@
 		B5C0FD8E29E694E1009AD7E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -767,7 +1041,6 @@
 		B5C0FD8F29E694E1009AD7E4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -788,6 +1061,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3DA4EF2A2CEBD6A600A70066 /* Build configuration list for PBXNativeTarget "BetsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DA4EF2B2CEBD6A600A70066 /* Debug */,
+				3DA4EF2C2CEBD6A600A70066 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B5C0FD5329E69206009AD7E4 /* Build configuration list for PBXProject "Bets" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
