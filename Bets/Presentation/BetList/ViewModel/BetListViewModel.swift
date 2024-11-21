@@ -18,9 +18,9 @@ protocol BetListActions: AnyObject {
 @Observable class BetListViewModel {
     /// Represents the various states of the Bet List view.
     enum BetListViewState {
-        case loading // Indicates the data is being fetched
-        case loaded([Bet]) // Indicates the data has been successfully fetched
-        case error(String) // Represents an error state with a message
+        case loading  // Indicates the data is being fetched
+        case loaded([Bet])  // Indicates the data has been successfully fetched
+        case error(String)  // Represents an error state with a message
     }
 
     private weak var delegate: BetListActions?
@@ -32,7 +32,6 @@ protocol BetListActions: AnyObject {
         self.delegate = betListActions
     }
 
-    
     func getOdds() async {
         do {
             let bets = try await betRepository.updateOdds()

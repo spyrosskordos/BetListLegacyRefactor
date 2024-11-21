@@ -5,10 +5,11 @@
 //  Created by Spyridon Skordos on 20/11/24.
 //
 
-@testable import Bets
-@testable import BetsCore
 import Testing
 import UIKit
+
+@testable import Bets
+@testable import BetsCore
 
 @MainActor
 @Suite("BetListCoordinatorTests related tests")
@@ -36,8 +37,14 @@ struct BetListCoordinatorTests {
 
         // Assert: Verify that `makeModule` was called to create the Bet List module
         #expect(mockBetListFactory.didCallMakeModule, "`makeModule` should be called.")
-        #expect(navigationController.viewControllers.count == 1, "There should be one view controller in the navigation stack.")
-        #expect(navigationController.viewControllers.first == mockBetListFactory.mockModule, "The initial view controller should be the one created by `makeModule`.")
+        #expect(
+            navigationController.viewControllers.count == 1,
+            "There should be one view controller in the navigation stack."
+        )
+        #expect(
+            navigationController.viewControllers.first == mockBetListFactory.mockModule,
+            "The initial view controller should be the one created by `makeModule`."
+        )
         #expect(
             navigationController.navigationBar.prefersLargeTitles,
             "The navigation bar should prefer large titles."
@@ -47,15 +54,24 @@ struct BetListCoordinatorTests {
     @Test("Test betTapped navigate to Details")
     func testBetTapped_NavigatesToBetDetails() {
         // Arrange: Prepare a mock bet
-        let mockBet = Bet(name: "Mock Bet", sellIn: 10, quality: 20)
+        let mockBet = Bet(name: .halfTimeScore, sellIn: 10, quality: 20)
 
         // Act: Simulate a bet being tapped
         coordinator.betTapped(bet: mockBet)
 
         // Assert: Verify that `makeBetDetails` was called to create the details screen
         #expect(mockBetListFactory.didCallMakeBetDetails, "`makeBetDetails` should be called.")
-        #expect(mockBetListFactory.receivedBet == mockBet, "The bet passed to `makeBetDetails` should match the tapped bet.")
-        #expect(navigationController.viewControllers.count == 1, "Bet details should be pushed to the navigation stack.")
-        #expect(navigationController.viewControllers.last == mockBetListFactory.mockBetDetails, "The last view controller should be the bet details view.")
+        #expect(
+            mockBetListFactory.receivedBet == mockBet,
+            "The bet passed to `makeBetDetails` should match the tapped bet."
+        )
+        #expect(
+            navigationController.viewControllers.count == 1,
+            "Bet details should be pushed to the navigation stack."
+        )
+        #expect(
+            navigationController.viewControllers.last == mockBetListFactory.mockBetDetails,
+            "The last view controller should be the bet details view."
+        )
     }
 }

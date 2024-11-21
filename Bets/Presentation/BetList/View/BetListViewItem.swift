@@ -1,5 +1,4 @@
 import BetsCore
-
 //
 //  BetListViewItem.swift
 //  Bets
@@ -13,7 +12,7 @@ struct BetListViewItem: View {
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text(bet.name)
+                Text(bet.name.rawValue)
                     .font(.headline)
                     .foregroundStyle(Color(.betssonlightWhite))
 
@@ -26,7 +25,7 @@ struct BetListViewItem: View {
                 .font(.subheadline)
                 .foregroundStyle(Color(.betssonOrange))
                 .frame(width: 40)
-            
+
         }
         .padding()
         .frame(height: 60)
@@ -35,5 +34,5 @@ struct BetListViewItem: View {
 }
 
 #Preview(traits: .sizeThatFitsLayout) {
-    BetListViewItem(bet: Bet(name: "BetName", sellIn: 22, quality: 1))
+    BetListViewItem(bet: Bet(name: .cleanSheet, sellIn: 22, quality: 1))
 }

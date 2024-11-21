@@ -7,5 +7,5 @@
 
 public protocol BetUpdatersRegistry {
     /// Retrieve an updater for a given bet name
-    func getUpdater(for betName: String) -> BetUpdater
+    func getUpdater(for betName: BetName) -> BetUpdater
 }
