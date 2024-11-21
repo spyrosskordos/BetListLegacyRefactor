@@ -1,3 +1,4 @@
+import BetsCore
 //
 //  BetListCoordinator.swift
 //  Bets
@@ -6,7 +7,6 @@
 //
 import SwiftUI
 import UIKit
-import BetsCore
 
 /// Coordinator for managing the Bet List feature flow.
 final class BetListCoordinator: Coordinator {
@@ -30,8 +30,12 @@ final class BetListCoordinator: Coordinator {
         let controller = betListFactory.makeModule(with: betRepository, delegate: self)
         navigation.navigationBar.prefersLargeTitles = true
         navigation.navigationBar.barTintColor = .clear
-        navigation.navigationBar.titleTextAttributes = [.foregroundColor: UIColor(Color(.betssonOrange))]
-        navigation.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor(Color(.betssonOrange))]
+        navigation.navigationBar.titleTextAttributes = [
+            .foregroundColor: UIColor(Color(.betssonOrange))
+        ]
+        navigation.navigationBar.largeTitleTextAttributes = [
+            .foregroundColor: UIColor(Color(.betssonOrange))
+        ]
 
         navigation.pushViewController(controller, animated: false)
     }
@@ -39,6 +43,7 @@ final class BetListCoordinator: Coordinator {
     /// Navigates to the Bet Details screen for the specified bet.
     private func navigateToDetail(for bet: Bet) {
         let controller = betListFactory.makeBetDetails(with: bet)
+        navigation.navigationBar.tintColor = UIColor(Color(.betssonOrange))
         navigation.pushViewController(controller, animated: true)
     }
 }

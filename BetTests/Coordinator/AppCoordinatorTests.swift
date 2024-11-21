@@ -5,9 +5,10 @@
 //  Created by Spyridon Skordos on 20/11/24.
 //
 
-import XCTest
-@testable import Bets
 import Testing
+import XCTest
+
+@testable import Bets
 
 @MainActor
 @Suite("AppCordinator related tests")
@@ -18,7 +19,7 @@ struct AppCoordinatorTests {
     private var mockWindow: UIWindow
     private var appCoordinator: AppCoordinator
 
-    init () {
+    init() {
         navigationController = UINavigationController()
         mockAppFactory = MockAppFactory()
         mockWindow = UIWindow()
@@ -41,7 +42,6 @@ struct AppCoordinatorTests {
         #expect(mockAppFactory.didCallMakeBetListCoordinator)
     }
 
-    
     func testConfigWindow_SetsRootViewControllerAndMakesWindowVisible() {
         // Act: Start the app flow, which also configures the window
         appCoordinator.start()

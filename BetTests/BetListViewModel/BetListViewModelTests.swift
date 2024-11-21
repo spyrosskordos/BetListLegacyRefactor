@@ -16,9 +16,11 @@ struct BetListViewModelTests {
     /// Creates a new instance of the `BetListViewModel` with a mock repository.
     /// - Parameter response: The desired response behavior for the mock repository.
     /// - Returns: BetListViewModel.
-    private func makeSUT(response: MockBetRepository.Response,actions: BetListActions? = nil) -> (sut: BetListViewModel, mockRepository: MockBetRepository) {
+    private func makeSUT(response: MockBetRepository.Response, actions: BetListActions? = nil) -> (
+        sut: BetListViewModel, mockRepository: MockBetRepository
+    ) {
         let mockRepository = MockBetRepository(response: response)
-        let sut = BetListViewModel(betRepository: mockRepository,betListActions: actions)
+        let sut = BetListViewModel(betRepository: mockRepository, betListActions: actions)
         return (sut, mockRepository)
     }
 
@@ -29,7 +31,7 @@ struct BetListViewModelTests {
 
         // Assert: Verify the initial state is `.loading`
         if case .loading = sut.state {
-            return // Pass the test if the state is .loading
+            return  // Pass the test if the state is .loading
         }
 
         Issue.record("Expected state to be .loading, but got \(sut.state)")
@@ -39,8 +41,8 @@ struct BetListViewModelTests {
     func test_getOdds_success_updatesStateToLoaded() async {
         // Arrange: Define expected bets and create the SUT
         let expectedBets = [
-            Bet(name: "Bet1", sellIn: 1, quality: 5),
-            Bet(name: "Bet2", sellIn: 2, quality: 4)
+            Bet(name: .cornerKicks, sellIn: 1, quality: 5),
+            Bet(name: .offsides, sellIn: 2, quality: 4),
         ]
         let (sut, mockRepository) = makeSUT(response: .mockResponse(expectedBets))
 
@@ -49,7 +51,7 @@ struct BetListViewModelTests {
 
         // Assert: Verify the state transitions to `.loaded` with the correct data
         if case let .loaded(bets) = sut.state {
-            #expect(bets == expectedBets) // Pass if the loaded bets match the expected
+            #expect(bets == expectedBets)  // Pass if the loaded bets match the expected
         } else {
             Issue.record("Expected state to be .loaded with bets, but got \(sut.state)")
         }
@@ -74,7 +76,7 @@ struct BetListViewModelTests {
 
         // Assert: Verify the state transitions to `.error` with the correct error message
         if case let .error(message) = sut.state {
-            #expect(message == expectedError.localizedDescription) // Pass if the error message matches
+            #expect(message == expectedError.localizedDescription)  // Pass if the error message matches
         } else {
             Issue.record("Expected state to be .error, but got \(sut.state)")
         }
@@ -84,14 +86,13 @@ struct BetListViewModelTests {
         #expect(mockRepository.updateOddsCallCount == 1)
     }
 
-    
     @Test("Test bet tapped triggers actions delegate")
     func test_betTapped_triggers_actionsDelegate() async {
         // Arrange: Define the error and create the SUT
         let spy = BetListActionsSpy()
-        let expectedBet = Bet(name: "bet1", sellIn: 1, quality: 1)
-        let (sut, mockRepository) = makeSUT(response: .mockResponse([expectedBet]),actions: spy)
-        
+        let expectedBet = Bet(name: .firstGoalScorer, sellIn: 1, quality: 1)
+        let (sut, _) = makeSUT(response: .mockResponse([expectedBet]), actions: spy)
+
         // Act: bet tapped
         sut.betTapped(bet: expectedBet)
 

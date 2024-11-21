@@ -18,7 +18,8 @@ protocol BetListFactory {
 }
 
 struct BetListFactoryImpl: BetListFactory {
-    func makeModule(with betRepository: BetRepository, delegate: BetListActions) -> UIViewController {
+    func makeModule(with betRepository: BetRepository, delegate: BetListActions) -> UIViewController
+    {
         let viewModel = BetListViewModel(betRepository: betRepository, betListActions: delegate)
         let view = BetListView(viewModel: viewModel)
         let viewController = UIHostingController(rootView: view)
@@ -30,7 +31,7 @@ struct BetListFactoryImpl: BetListFactory {
         let viewModel = BetDetailsViewModel(bet: bet)
         let view = BetDetailsView(viewModel: viewModel)
         let viewController = UIHostingController(rootView: view)
-        viewController.title = bet.name
+        viewController.title = bet.name.rawValue
         return viewController
     }
 }

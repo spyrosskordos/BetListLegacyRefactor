@@ -54,7 +54,7 @@ struct BetListView: View {
                 .foregroundStyle(Color(.betssonlightWhite))
             Button(action: {
                 Task {
-                    await viewModel.getOdds() 
+                    await viewModel.getOdds()
                 }
             }) {
                 Text("Retry")
