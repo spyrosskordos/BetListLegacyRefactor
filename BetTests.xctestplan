@@ -9,9 +9,30 @@
     }
   ],
   "defaultOptions" : {
+    "codeCoverage" : {
+      "targets" : [
+        {
+          "containerPath" : "container:Bets.xcodeproj",
+          "identifier" : "B5C0FD5729E69206009AD7E4",
+          "name" : "Bets"
+        },
+        {
+          "containerPath" : "container:Bets.xcodeproj",
+          "identifier" : "B5C0FD7329E694E0009AD7E4",
+          "name" : "BetsCore"
+        }
+      ]
+    },
     "testTimeoutsEnabled" : true
   },
   "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:Bets.xcodeproj",
+        "identifier" : "3DA4EF232CEBD6A600A70066",
+        "name" : "BetsTests"
+      }
+    },
     {
       "target" : {
         "containerPath" : "container:Bets.xcodeproj",

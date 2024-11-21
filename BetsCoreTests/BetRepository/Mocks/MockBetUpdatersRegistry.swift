@@ -8,9 +8,9 @@
 @testable import BetsCore
 
 class MockBetUpdatersRegistry: BetUpdatersRegistry {
-    var updaters: [String: BetUpdater] = [:]
+    var updaters: [BetName: BetUpdater] = [:]
 
-    func getUpdater(for betName: String) -> BetUpdater {
+    func getUpdater(for betName: BetName) -> BetUpdater {
         return updaters[betName] ?? DefaultBetUpdater()
     }
 }

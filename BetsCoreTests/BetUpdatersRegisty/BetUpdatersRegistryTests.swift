@@ -10,26 +10,33 @@ import XCTest
 
 @testable import BetsCore
 
-@Suite("BetUpdateStrategyFactory related tests")
-final class BetsUpdaterRegistryTests {
+@Suite("BetUpdatersRegistryImpl related tests")
+final class BetUpdatersRegistryImplTests {
+
     private var sut: BetUpdatersRegistryImpl
 
     init() {
         sut = BetUpdatersRegistryImpl()
     }
 
-    @Test("Test all updater types",
-          arguments: zip(["Total score", "Player performance", "Winning team", "Uknown bet"],
-                         [
-                             TotalScoreBetUpdater.self, PlayerPerformanceBetUpdater.self, WinningTeamBetUpdater.self,
-                             DefaultBetUpdater.self,
-                         ]))
-    func testGetUpdaterForBet(name: String, expectedType: BetUpdater.Type) {
+    @Test(
+        "Test all updater types",
+        arguments: zip(
+            [BetName.totalScore, .playerPerformance, .winningTeam, .cleanSheet],
+            [
+                TotalScoreBetUpdater.self,
+                PlayerPerformanceBetUpdater.self,
+                WinningTeamBetUpdater.self,
+                DefaultBetUpdater.self,
+            ]
+        )
+    )
+    func testGetUpdaterForBet(name: BetName, expectedType: BetUpdater.Type) {
         // Call the reusable assertion logic for each test case
         assertOutputType(name: name, expectedType: expectedType)
     }
 
-    func assertOutputType(name: String, expectedType: BetUpdater.Type) {
+    func assertOutputType(name: BetName, expectedType: BetUpdater.Type) {
         // Act: Retrieve the updater for the given name
         let updater = sut.getUpdater(for: name)
 
@@ -39,4 +46,5 @@ final class BetsUpdaterRegistryTests {
             "Expected \(expectedType) for '\(name)', but got \(type(of: updater))"
         )
     }
+
 }
