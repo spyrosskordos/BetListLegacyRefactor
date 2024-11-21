@@ -43,6 +43,7 @@ final class BetListCoordinator: Coordinator {
     /// Navigates to the Bet Details screen for the specified bet.
     private func navigateToDetail(for bet: Bet) {
         let controller = betListFactory.makeBetDetails(with: bet)
+        navigation.navigationBar.tintColor = UIColor(Color(.betssonOrange))
         navigation.pushViewController(controller, animated: true)
     }
 }
